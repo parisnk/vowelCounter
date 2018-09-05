@@ -1,13 +1,14 @@
 def main():
-    print("This program counts the number of vowels in an input phrase.")
+    print("This program counts the number of letters in the phrase.")
+    lettersToCount = input("Enter the letters to count in phrase: (e.g., 'aeoie')").lower()
     inputPhrase = input("Enter your phrase: ").lower()
 
-    totalVowels = 0
+    totalOccurrencesOfLettersToCount = 0
     for character in inputPhrase:
-        if character in ['a', 'e', 'i', 'o', 'u']:
-            totalVowels = totalVowels + 1
+        if character in lettersToCount:
+            totalOccurrencesOfLettersToCount = totalOccurrencesOfLettersToCount + 1
     
-    print("Total vowels in your phrase: {}".format(totalVowels))
+    print("Total occurrences '{}' in your phrase: {}".format(lettersToCount, totalOccurrencesOfLettersToCount))
 
 if __name__ ==  "__main__":
    main()
