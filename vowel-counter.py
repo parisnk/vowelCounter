@@ -1,9 +1,9 @@
 def getInputPhrase():
-<<<<<<< HEAD
+    <<<<<<< HEAD
     return input("Enter your phrase: ").lower()
 
 def main():
-    print("This program counts the number of vowels in an input phrase.")
+    print("This program counts the number vowels in an input phrase.")
     inputPhrase = getInputPhrase()
 =======
     return input("Enter you phrase: ").lower()
